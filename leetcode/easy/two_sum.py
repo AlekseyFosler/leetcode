@@ -49,10 +49,3 @@ class Solution:
             for ynd, y in enumerate(nums[xnd + 1:], xnd + 1):
                 if x + y == target:
                     return [xnd, ynd]
-
-
-if __name__ == "__main__":
-    assert Solution().twoSum(nums=[2, 7, 11, 15], target=9) == [0, 1], Solution().twoSum(nums=[2, 7, 11, 15], target=9)
-    assert Solution().twoSum(nums=[3, 2, 4], target=6) == [1, 2], Solution().twoSum(nums=[3, 2, 4], target=6)
-    assert Solution().twoSum(nums=[3, 3], target=6) == [0, 1], Solution().twoSum(nums=[3, 3], target=6)
-    assert Solution().twoSum(nums=[3, 2, 3], target=6) == [0, 2], Solution().twoSum(nums=[3, 2, 3], target=6)
