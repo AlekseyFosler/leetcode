@@ -1,0 +1,15 @@
+[tool.poetry]
+name = "leetcode"
+version = "0.1.0"
+description = "Solving problems from the site"
+authors = ["Alexey Fosler <alexey.fosler@mail.ru>"]
+license = "Apache License 2.0"
+readme = "README.md"
+
+[tool.poetry.dependencies]
+python = "^3.11"
+
+
+[build-system]
+requires = ["poetry-core"]
+build-backend = "poetry.core.masonry.api"
