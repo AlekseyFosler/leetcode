@@ -45,7 +45,10 @@ from typing import List
 
 class Solution:
     def twoSum(self, nums: List[int], target: int) -> List[int]:
-        for xnd, x in enumerate(nums):
-            for ynd, y in enumerate(nums[xnd + 1:], xnd + 1):
-                if x + y == target:
-                    return [xnd, ynd]
+        tabl_hash = {}
+        for ind, num in enumerate(nums):
+            res = target - num
+            if res in tabl_hash:
+                return [tabl_hash[res], ind]
+            tabl_hash[num] = ind
+
