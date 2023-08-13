@@ -46,9 +46,3 @@ class Solution:
                     return False
                 stack.pop()
         return True
-
-
-
-
-s = Solution()
-print(s.isValid("{[]}"))
